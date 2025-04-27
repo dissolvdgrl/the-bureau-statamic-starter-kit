@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: [
         './resources/**/*.antlers.html',
         './resources/**/*.antlers.php',
@@ -9,7 +10,12 @@ export default {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                sans: ['Archivo Black', 'sans-serif'],
+                mono: ['IBM Plex Mono', 'monospace']
+            }
+        },
     },
 
     plugins: [
